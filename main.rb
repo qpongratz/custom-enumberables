@@ -70,13 +70,11 @@ module Enumerable
     end
     memo
   end
-
 end
 
 def multiply_els(figures)
   figures.my_inject { |product, number| product * number }
 end
-
 
 numbers = [-1, -2, 17, 1, 2, 3, 4, 5]
 positive_numbers = [1, 5, 17, 22, 4]
@@ -155,4 +153,4 @@ add_ten = proc { |item| item + 10 }
 
 p numbers.my_map(invert_signs)
 p numbers.my_map(add_ten)
-p numbers.my_map { |item| item + 99 }
+p(numbers.my_map { |item| item + 99 })
